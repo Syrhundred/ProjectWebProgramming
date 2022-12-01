@@ -1,5 +1,12 @@
 body{
     margin: 0;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    overflow: hidden;
+    font-family: "Century Gothic";
+    font-size: 14px;
 }
 
 .navbar{
@@ -8,23 +15,16 @@ body{
     align-items: center;
     width: 100vw;
     height: 56px;
-    /*background-color: red;*/
 }
 
-.icon{
-    display: flex;
-    align-items: center;
-    height: 5vh;
-    width: 20vw;
-    margin-left: 2vw;
-}
+
 
 .cars{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 60vw;
-    height: 5vh;
+    height: 56px;
 }
 
 .menu{
@@ -32,12 +32,21 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width: 20vw;
-    height: 5vh;
+    height: 56px;
 }
 
 .navTextFam {
-    font-family: "GothamSSm";
-    font-size: 14px;
+    font-weight: bold;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 88px;
+    margin-top: 60px;
 }
 
 
