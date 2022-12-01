@@ -1,9 +1,10 @@
-.main{
+.navbar{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: 100vw;
+    height: 56px;
 }
-
 .icon{
     display: flex;
     align-items: center;
@@ -12,28 +13,78 @@
     margin-left: 2vw;
 }
 
-.Account{
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.account{
     width: 530px;
     height: 438px;
-    background-color: red;
-    padding: 25px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .log{
-    margin-top: 8px;
+    /*margin-top: 8px;*/
     padding: 5px;
     font-weight: bold;
-}
-div.log > label{
     color:rgb(133,134,137);
     margin-bottom: 10px;
 }
 
 
-div.log > input{
+form > input{
     background-color: #f4f4f4;
-    width: 60%;
+    width: 332px;
+    height: 40px;
     padding: 8px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.bottom_log{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 332px;
+}
+
+button{
+    margin-top: 20px;
+    width: 332px;
+    height: 40px;
+    background-color: rgb(159,181,240);
+    color: #f4f4f4;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgb(159, 181, 240);
+}
+
+.hr-lines{
+    color: rgb(133,134,137);
+    font-size: 18px;
+    margin: 10px;
+}
+
+.hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: rgb(133,134,137);
+    display: inline-block;
+}
+
+.hr-lines:before{
+    content:" ";
+    display: inline-block;
+    height: 2px;
+    width: 130px;
+    background: rgb(133,134,137);
 }
