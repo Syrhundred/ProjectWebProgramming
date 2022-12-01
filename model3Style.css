@@ -54,3 +54,22 @@ nav{
 a:visited {
     color: #393C41;
 }
+
+.twoPP {
+    display: flex;
+    width: 320px;
+    height: 24px;
+    background-color: #F4F4F4;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftButton {
+    width: 165px;
+    height: 32px;
+}
+
+#rightButton {
+    width: 165px;
+    height: 32px;
+}
