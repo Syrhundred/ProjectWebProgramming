@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 20vw;
+    margin-left: 2vw;
+}
+
+.Account{
+    width: 530px;
+    height: 438px;
+    background-color: red;
+    padding: 25px;
+}
+
+.log{
+    margin-top: 8px;
+    padding: 5px;
+    font-weight: bold;
+}
+div.log > label{
+    color:rgb(133,134,137);
+    margin-bottom: 10px;
+}
+
+
+div.log > input{
+    background-color: #f4f4f4;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

@@ -17,13 +17,7 @@ body{
     height: 56px;
 }
 
-.icon{
-    display: flex;
-    align-items: center;
-    height: 56px;
-    width: 20vw;
-    margin-left: 2vw;
-}
+
 
 .cars{
     display: flex;
