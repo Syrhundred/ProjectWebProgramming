@@ -18,15 +18,35 @@ nav{
 }
 
 .rightSide {
+    font-family: "GothamSSm", serif;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
     width: 415px;
-    background-color: red;
+}
+
+.rightSide > h1 {
+    font-size: 40px;
+}
+
+.rightSide > p {
+    font-size: 14px;
+    color: #393C41;
 }
 
 .leftSide {
     display: flex;
     height: 100%;
     width: 1300px;
-    background-color: red;
+}
+
+.rightSide > a {
+    color: #393C41;
+    border-bottom: #393C41;
+}
+
+.smallShit {
+    display: flex;
+    align-items: center;
 }
