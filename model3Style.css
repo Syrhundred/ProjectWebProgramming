@@ -1,0 +1,32 @@
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+}
+
+.twoMainSides{
+    display: flex;
+    justify-content: space-between;
+}
+
+#teslaLogo {
+    align-items: center;
+    height: 24px;
+    width: 120px;
+    padding-left: 40px;
+}
+
+.rightSide {
+    display: flex;
+    height: 100%;
+    width: 415px;
+    background-color: red;
+}
+
+.leftSide {
+    display: flex;
+    height: 100%;
+    width: 1300px;
+    background-color: red;
+}
