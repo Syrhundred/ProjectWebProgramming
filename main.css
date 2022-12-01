@@ -45,8 +45,30 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 88px;
+    height: 608px;
     margin-top: 60px;
 }
-
+.black{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.white{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.data{
+    margin-top: 350px;
+ }
 
