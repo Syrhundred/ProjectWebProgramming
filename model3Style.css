@@ -50,3 +50,7 @@ nav{
     display: flex;
     align-items: center;
 }
+
+a:visited {
+    color: #393C41;
+}
