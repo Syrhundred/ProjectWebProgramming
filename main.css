@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 5vh;
+    background-color: red;
+}
+
+.icon{
+    height: 5vh;
+    width: 20vw;
+}
+
+.cars{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 5vh;
+}
+
+.menu{
+    display: flex;
+    font
+    width: 50vw;
+    height: 5vh;
+}
