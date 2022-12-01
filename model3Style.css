@@ -8,6 +8,7 @@ nav{
 .twoMainSides{
     display: flex;
     justify-content: space-between;
+
 }
 
 #teslaLogo {
