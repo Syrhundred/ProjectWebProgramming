@@ -56,12 +56,18 @@ form > input{
     width: 332px;
 }
 
+.bottom_log > button{
+    background-color: #f4f4f4;
+}
+
+
+
 button{
     margin-top: 20px;
     width: 332px;
     height: 40px;
     background-color: rgb(159,181,240);
-    color: #f4f4f4;
+    color: rgb(130,131,135);
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid rgb(159, 181, 240);
