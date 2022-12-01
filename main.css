@@ -5,15 +5,8 @@ body{
     background-repeat: no-repeat;
     background-position-y: -100px;
     overflow: hidden;
-}
-
-
-.model{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 88px;
+    font-family: "Century Gothic";
+    font-size: 14px;
 }
 
 .navbar{
@@ -49,9 +42,17 @@ body{
 }
 
 .navTextFam {
-    font-family: "Century Gothic";
-    font-size: 14px;
     font-weight: bold;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 88px;
+    margin-top: 60px;
 }
 
 
