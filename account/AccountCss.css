@@ -66,7 +66,7 @@ body{
 
 .top-side{
     width: 332px;
-    padding: 2px 0px 16px;
+    padding: 2px 0 16px;
     margin-bottom: 10px;
 }
 
@@ -90,15 +90,15 @@ button{
     flex-direction: row;
     align-items: center;
     color: rgb(133,134,137);
-    font-size: 18px;
+    font-size: 16px;
     margin: 20px 0;
-
+    font-weight: bold;
 }
 
 
 .hr-lines:after{
-    content:" ";
-    height: 2px;
+    content:"";
+    height: 1px;
     width: 130px;
     background: rgb(133,134,137);
     display: inline-block;
@@ -106,10 +106,10 @@ button{
 }
 
 .hr-lines:before{
-    content:" ";
+    content:"";
     margin-right: 3px;
     display: inline-block;
-    height: 2px;
+    height: 1px;
     width: 130px;
     background: rgb(133,134,137);
 }
