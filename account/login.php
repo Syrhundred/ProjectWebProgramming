@@ -23,6 +23,8 @@
     $count = mysqli_num_rows($result);
 
     if($count > 0){
-
+        $message = "Success!";
+    }else{
+        $message = "Email or Password is incorrect";
     }
 ?>
