@@ -87,7 +87,7 @@ a:visited {
 #leftButton:focus {
     background-color: white;
     opacity: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #rightButton {
@@ -102,7 +102,7 @@ a:visited {
 }
 
 #rightButton:focus {
-    transition: 0.5s;
+    transition: 0.3s;
     opacity: 100%;
     background-color: white;
 }
