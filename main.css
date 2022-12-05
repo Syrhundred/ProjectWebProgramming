@@ -1,10 +1,5 @@
 body{
     margin: 0;
-    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -100px;
-    overflow: hidden;
     font-family: "Century Gothic";
     font-size: 14px;
 }
@@ -13,8 +8,10 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 56px;
+    padding-left: 50px;
+    position: fixed;
 }
 
 
@@ -23,8 +20,9 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 60vw;
+    width: 60%;
     height: 56px;
+    padding-left: 90px;
 }
 
 .menu{
@@ -33,6 +31,8 @@ body{
     align-items: center;
     width: 20vw;
     height: 56px;
+    float: right;
+    padding-left: 70px;
 }
 
 .navTextFam {
@@ -44,9 +44,53 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 88px;
-    margin-top: 60px;
+    width: 100%;
+    height: 508px;
+    padding-top: 100px;
+}
+.black{
+    background-color: rgba(23, 26, 32, 1);
+    border: none;
+    color: white;
+    padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 8px;
+}
+.white{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 8px;
+}
+.data{
+    margin-top: 350px;
+ }
+section {
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+section:nth-child(1) {
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD");
+    background-size: cover;
 }
 
-
+section:nth-child(2) {
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70");
+    background-size: cover;
+}
+section:nth-child(3) {
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/538ac149-d103-4834-9d38-641d8ae447ef/bvlatuR/std/4096x2560/Homepage-Model-S-Desktop-LHD");
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
