@@ -20,15 +20,14 @@
     <h1>Create Account</h1>
 
     <form id="form" action="login.php" method="post">
-
         <div class="email_in">
             <label for="email" class="log">Email</label><br><br>
-            <input type="text" id="email" name="email_add">
+            <input type="text" id="email" name="email_add" minlength="5">
         </div>
 
         <div class="email_in">
             <label for="psw" class="log">Password</label><br><br>
-            <input type="password" id="psw" name="password">
+            <input type="password" id="psw" name="password" minlength="8">
         </div>
 
         <div class="email_in">
@@ -36,7 +35,10 @@
             <input type="password" id="con_psw" minlength="8">
         </div>
 
-        <button type="submit" onclick="">Create Account</button>
+        <div name="for_name" id="name"></div>
+        <div name="for_lname" id="lname"></div>
+
+        <button type="submit">Create Account</button>
     </form>
 
     <br>
@@ -47,5 +49,12 @@
         <a>Contact</a>
     </div>
 </div>
+<script>
+    const nameValue = localStorage.getItem("first");
+    const lnameValue = localStorage.getItem("last");
+
+    document.getElementById("name").textContent = nameValue;
+    document.getElementById("lname").textContent = lnameValue;
+</script>
 </body>
 </html>
