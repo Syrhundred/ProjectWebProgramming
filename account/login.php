@@ -5,18 +5,19 @@ $db = "users";
 
 $conn = mysqli_connect('localhost', $user, $pass, $db);
 
-if ($conn->connect_error) {
+if (!$conn) {
     die("Connection failed: " . $conn->connect_error);
-} else {
-    echo "Successfully connected";
 }
+
+
+mysqli_select_db($conn, "users");
 
 $f_name = $_POST['for_name'];
 $l_name = $_POST['for_lname'];
 $email = $_POST['email_add'];
 $password = $_POST['password'];
 
-$sql = "INSERT INTO users VALUES ('$f_name','$l_name','$email','$password')";
+$sql = "INSERT INTO users(FirstName, LastName, Email, Password) VALUES ('$f_name','$l_name','$email','$password')";
 
 if (mysqli_query($conn, $sql)) {
     echo "<h3>data stored in a database successfully."
