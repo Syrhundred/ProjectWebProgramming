@@ -1,30 +1,34 @@
 <?php
-    $user = "root";
-    $pass = "";
-    $db = "users";
+$user = "root";
+$pass = "";
+$db = "users";
 
-    $conn = new mysqli('localhost', $user, $pass, $db ) or die("Unable to connect");
+$conn = mysqli_connect('localhost', $user, $pass, $db);
 
-    if($conn->connect_error){
-        die("Connection failed: " . $conn->connect_error);
-    } else{
-      echo "Successfully connected";
-    }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+    echo "Successfully connected";
+}
 
-    $f_name = $_POST['FirstName'];
-    $l_name = $_POST['LastName'];
-    $email = $_POST['Email'];
-    $password = $_POST['Password'];
+$f_name = $_POST['for_name'];
+$l_name = $_POST['for_lname'];
+$email = $_POST['email_add'];
+$password = $_POST['password'];
 
-    $sql = "select * from users where FirstName like '$f_name' and LastName like '$l_name' and Email like '$email' and password like '$password'";
+$sql = "INSERT INTO users VALUES ('$f_name','$l_name','$email','$password')";
 
-    $result = $conn -> query($sql);
+if (mysqli_query($conn, $sql)) {
+    echo "<h3>data stored in a database successfully."
+        . " Please browse your localhost php my admin"
+        . " to view the updated data</h3>";
 
-    $count = mysqli_num_rows($result);
+    echo nl2br("\n$f_name\n $l_name\n "
+        . "$email\n $password");
+} else {
+    echo "ERROR: Hush! Sorry $sql. "
+        . mysqli_error($conn);
+}
 
-    if($count > 0){
-        $message = "Success!";
-    }else{
-        $message = "Email or Password is incorrect";
-    }
+mysqli_close($conn);
 ?>

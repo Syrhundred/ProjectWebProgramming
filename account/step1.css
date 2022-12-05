@@ -16,3 +16,11 @@ p{
 a{
     color: #5C5E62;
 }
+
+.button{
+    text-decoration: none;
+    width: 332px;
+    height: 40px;
+    background-color: #9FB5F0;
+    color: #f4f4f4;
+}
