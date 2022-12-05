@@ -1,5 +1,5 @@
 body {
-    font-family: "Gotham SSm A","Gotham SSm B","Gotham",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",Geneva,"Helvetica Neue",Arial,sans-serif;
+    font-family: GothamSSm;
 }
 
 nav{
@@ -32,7 +32,6 @@ nav{
 
 .rightSide > span {
     font-size: 40px;
-    font-weight: bold;
 }
 
 .rightSide > p {
@@ -111,4 +110,46 @@ a:visited {
     display: flex;
     width: inherit;
     justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.bigNums {
+    color: #393c41;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.smallNums {
+    font-size: 14px;
+}
+
+.midNums {
+    font-size: 12px;
+    color: #5c5e62;
+}
+
+#rearWheel {
+    font-weight: 500!important;
+    font-size: 15px;
+    display: flex;
+    width: inherit;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding-left: 94px;
+    color: #171A20;
+}
+
+#model3 {
+    font-family: GothamSSm, "Inter Semi Bold";
+    font-size: 14px;
+    color: #393c41;
+    border-radius: 5px;
+    border-color: #d0d1d2;
+    border-width: 1px;
+    width: 320px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
 }
