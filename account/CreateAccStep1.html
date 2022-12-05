@@ -23,12 +23,12 @@
 
         <div class="email_in">
             <label for="first" class="log">First Name</label><br><br>
-            <input type="text" id="first" name="for_name">
+            <input type="text" id="first" minlength="1">
         </div>
 
         <div class="email_in">
-            <label for="lname" class="log">Last Name</label><br><br>
-            <input type="text" id="lname" name="for_lname">
+            <label for="lastname" class="log">Last Name</label><br><br>
+            <input type="text" id="lastname" minlength="1">
         </div>
 
         <p>
@@ -37,11 +37,8 @@
             Account
         </p>
 
-        <a class="button" href="Step2.html">Next</a>
-
+            <a href="Step2.html"><div class="button_form">Next</div></a>
     </form>
-    <h1>Ers</h1>
-
 
     <br>
 
@@ -51,5 +48,24 @@
         <a>Contact</a>
     </div>
 </div>
+<script>
+    function giveNames() {
+        const form = document.getElementById("form");
+        const fname = document.getElementById("first");
+        const lname = document.getElementById("lname");
+
+        form.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const fnameValue = fname.value;
+            const lnameValue = lname.value;
+
+            localStorage.setItem('first', fnameValue);
+            localStorage.setItem('last', lnameValue);
+
+            window.location.href = "Step2.html";
+        })
+    }
+</script>
 </body>
 </html>

@@ -3,6 +3,7 @@ span{
     padding: 12px 0 0;
     color: #5C5E62;
     font-weight: bold;
+    font-family: "Gotham SSm";
 }
 
 p{
@@ -10,17 +11,31 @@ p{
     width: 332px;
     height: 54px;
     color: #5C5E62;
-    padding: 0 0 16px
+    padding: 0 0 16px;
+    font-family: "Gotham SSm";
 }
 
 a{
     color: #5C5E62;
+    font-family: "Gotham SSm";
 }
 
-.button{
-    text-decoration: none;
+/*#lname{*/
+/*    display: none;*/
+/*}*/
+
+/*#name{*/
+/*    display: none;*/
+/*}*/
+
+.button_form{
     width: 332px;
     height: 40px;
     background-color: #9FB5F0;
     color: #f4f4f4;
+    font-family: "Gotham SSm";
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
