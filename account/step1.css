@@ -1,0 +1,26 @@
+span{
+    font-size: 12px;
+    padding: 12px 0 0;
+    color: #5C5E62;
+    font-weight: bold;
+}
+
+p{
+    font-size: 12px;
+    width: 332px;
+    height: 54px;
+    color: #5C5E62;
+    padding: 0 0 16px
+}
+
+a{
+    color: #5C5E62;
+}
+
+.button{
+    text-decoration: none;
+    width: 332px;
+    height: 40px;
+    background-color: #9FB5F0;
+    color: #f4f4f4;
+}

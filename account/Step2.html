@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="AccountCss.css">
+    <link rel="stylesheet" href="step1.css">
+</head>
+<body>
+<div class="navbar">
+
+    <div class="icon">
+        <img src="teslaLogoLog.svg" style="height: 24px; width: 120px">
+    </div>
+
+</div>
+
+<div class="account">
+    <span> Step 2 of 2 </span>
+    <h1>Create Account</h1>
+
+    <form id="form" action="login.php" method="post">
+
+        <div class="email_in">
+            <label for="email" class="log">Email</label><br><br>
+            <input type="text" id="email" name="email_add">
+        </div>
+
+        <div class="email_in">
+            <label for="psw" class="log">Password</label><br><br>
+            <input type="password" id="psw" name="password">
+        </div>
+
+        <div class="email_in">
+            <label for="con_psw" class="log">Confirm Password</label><br><br>
+            <input type="password" id="con_psw" minlength="8">
+        </div>
+
+        <button type="submit" onclick="">Create Account</button>
+
+    </form>
+
+    <br>
+
+    <div class="bottom">
+        <a>Tesla 2022</a>
+        <a>Privacy & Legal</a>
+        <a>Contact</a>
+    </div>
+</div>
+</body>
+</html>
