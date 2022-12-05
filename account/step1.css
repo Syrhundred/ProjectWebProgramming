@@ -3,7 +3,7 @@ span{
     padding: 12px 0 0;
     color: #5C5E62;
     font-weight: bold;
-    font-family: "Gotham SSm";
+    font-family: "GothamSSm Light", serif;
 }
 
 p{
@@ -12,12 +12,12 @@ p{
     height: 54px;
     color: #5C5E62;
     padding: 0 0 16px;
-    font-family: "Gotham SSm";
+    font-family: "GothamSSm Light", serif;
 }
 
 a{
     color: #5C5E62;
-    font-family: "Gotham SSm";
+    font-family: "GothamSSm Light", serif;
 }
 
 /*#lname{*/
@@ -33,7 +33,7 @@ a{
     height: 40px;
     background-color: #9FB5F0;
     color: #f4f4f4;
-    font-family: "Gotham SSm";
+    font-family: "GothamSSm Light", serif;
     border-radius: 5px;
     display: flex;
     justify-content: center;
