@@ -1,5 +1,9 @@
 body {
     font-family: GothamSSm, serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -8,6 +12,7 @@ nav{
     align-items: center;
     width: 100%;
     height: 56px;
+    margin-top: 0;
 }
 
 .twoMainSides{
@@ -136,17 +141,27 @@ a:visited {
     width: inherit;
     margin-top: 50px;
     margin-bottom: 15px;
-    padding-left: 94px;
+    padding-left: 95px;
+    color: #171A20;
+}
+
+#dualMotor {
+    font-weight: 500!important;
+    font-size: 15px;
+    display: flex;
+    width: inherit;
+    margin-top: 50px;
+    margin-bottom: 15px;
     color: #171A20;
 }
 
 #model3 {
     font-family: GothamSSm, serif;
     font-size: 14px;
-    color: #393c41;
+    border-color: #A2A3A5;
+    color: #393C41;
     border-radius: 5px;
-    border-color: #d0d1d2;
-    border-width: 1px;
+    border-width: 0.1px;
     width: 320px;
     height: 53px;
     display: flex;
@@ -155,6 +170,89 @@ a:visited {
     background: none;
 }
 
-#moder3:hover {
+#model3:focus {
+    font-family: GothamSSm, serif;
+    transition: 0.3s;
+    border-color: #3E6AE1;
+    border-width: 3px;
+}
+
+#model3performance {
+    font-family: GothamSSm, serif;
+    font-size: 14px;
+    border-color: #A2A3A5;
+    color: #393C41;
+    border-radius: 5px;
+    border-width: 0.1px;
+    width: 320px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+}
+
+#model3performance:focus {
+    font-family: GothamSSm, serif;
+    transition: 0.3s;
+    border-color: #3E6AE1;
+    border-width: 3px;
+}
+
+.learnMore {
+    font-family: "GothamSSm Light", serif;
+    font-size: 12px;
+    color: #5c5e62;
+}
+
+.learnMore > a {
+    color: #5c5e62;
+}
+
+.learnMore1 {
+    font-family: "GothamSSm Light", serif;
+    font-size: 12px;
+    color: #5c5e62;
+    margin-top: 20px;
+    width: 320px;
+}
+
+.learnMore1 > a {
+    color: #5c5e62;
+}
+
+.featureDetails {
+    font-family: GothamSSm, serif;
+    color: #393C41;
+    border:none;
+    font-size: 12px;
+    width: 145px;
+    height: 32px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.mods{
+    margin-top: 40px;
+    color: #171A20;
+    font-size: 28px;
+}
+
+.colors {
+    margin-top: 50px;
+    display:flex;
+    width: 90px;
+    justify-content: space-between;
+}
+
+.eachColor {
+    background: none;
+    border: none;
+}
+
+.eachColor:focus{
+    transition: 0.3s;
+    border:1px solid #3E6AE1;
 
 }
+
