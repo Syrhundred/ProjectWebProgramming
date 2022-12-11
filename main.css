@@ -1,10 +1,11 @@
 body{
     margin: 0;
-    font-family: "Century Gothic";
+    font-family: "GothamSSm Light", serif;
     font-size: 14px;
 }
 
 .navbar{
+    font-family: "GothamSSm Light", serif;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,6 +18,7 @@ body{
 
 
 .cars{
+    font-family: "GothamSSm Light", serif;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -26,6 +28,7 @@ body{
 }
 
 .menu{
+    font-family: "GothamSSm Light", serif;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -36,10 +39,12 @@ body{
 }
 
 .navTextFam {
+    font-family: "GothamSSm Light", serif;
     font-weight: bold;
 }
 
 .model{
+    font-family: "GothamSSm Light", serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,9 +54,11 @@ body{
     padding-top: 100px;
 }
 .black{
-    background-color: black;
+    font-family: "GothamSSm Light", serif;
+    background-color: rgba(23, 26, 32, 1);
     border: none;
     color: white;
+    border-radius: 5px;
     padding: 10px 65px;
     text-align: center;
     text-decoration: none;
@@ -60,9 +67,11 @@ body{
     margin-right: 8px;
 }
 .white{
-    background-color: white;
+    font-family: "GothamSSm Light", sans-serif;
+    background-color: #f4f4f4A6;
     border: none;
-    color: black;
+    border-radius: 5px;
+    color: #393C41;
     padding: 10px 65px;
     text-align: center;
     text-decoration: none;

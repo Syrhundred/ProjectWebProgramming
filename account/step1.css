@@ -1,0 +1,41 @@
+span{
+    font-size: 12px;
+    padding: 12px 0 0;
+    color: #5C5E62;
+    font-weight: bold;
+    font-family: "GothamSSm Light", serif;
+}
+
+p{
+    font-size: 12px;
+    width: 332px;
+    height: 54px;
+    color: #5C5E62;
+    padding: 0 0 16px;
+    font-family: "GothamSSm Light", serif;
+}
+
+a{
+    color: #5C5E62;
+    font-family: "GothamSSm Light", serif;
+}
+
+/*#lname{*/
+/*    display: none;*/
+/*}*/
+
+/*#name{*/
+/*    display: none;*/
+/*}*/
+
+.button_form{
+    width: 332px;
+    height: 40px;
+    background-color: #9FB5F0;
+    color: #f4f4f4;
+    font-family: "GothamSSm Light", serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
