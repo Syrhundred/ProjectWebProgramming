@@ -73,11 +73,6 @@ body{
 .data{
     margin-top: 350px;
  }
-.container {
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(300px);
-    scroll-snap-type: y mandatory;
-}
 section {
     font-family: sans-serif;
     min-height: 100vh;
