@@ -1,7 +1,7 @@
 <?php
 $user = "root";
 $pass = "";
-$db = "users";
+$db = "project_work";
 
 $conn = mysqli_connect('localhost', $user, $pass, $db);
 
@@ -10,7 +10,7 @@ if (!$conn) {
 }
 
 
-mysqli_select_db($conn, "users");
+mysqli_select_db($conn, "project_work");
 
 $f_name = $_POST['for_name'];
 $l_name = $_POST['for_lname'];
