@@ -22,17 +22,12 @@
     <form id="form" action="Registration.php" method="post" name = "Register">
         <div class="email_in">
             <label for="email" class="log">Email</label><br><br>
-            <input type="text" id="email" name="email_add" minlength="5">
+            <input type="text" id="email" name="email_add" minlength="5" pattern="+@">
         </div>
 
         <div class="email_in">
             <label for="psw" class="log">Password</label><br><br>
             <input type="password" id="psw" name="password" minlength="8">
-        </div>
-
-        <div class="email_in">
-            <label for="con_psw" class="log">Confirm Password</label><br><br>
-            <input type="password" id="con_psw" minlength="8">
         </div>
 
         <input name="First" id="name">
