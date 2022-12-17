@@ -12,23 +12,17 @@ if (!$conn) {
 
 mysqli_select_db($conn, "project_work");
 
-$f_name = $_POST['for_name'];
-$l_name = $_POST['for_lname'];
+$f_name = $_POST['First'];
+$l_name = $_POST['Last'];
 $email = $_POST['email_add'];
 $password = $_POST['password'];
 
-$sql = "INSERT INTO users(FirstName, LastName, Email, Password) VALUES ('$f_name','$l_name','$email','$password')";
+$sql = "INSERT INTO usersfromproject(FirstName, LastName, Email, Password) VALUES ('$f_name','$l_name','$email','$password')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "<h3>data stored in a database successfully."
-        . " Please browse your localhost php my admin"
-        . " to view the updated data</h3>";
-
-    echo nl2br("\n$f_name\n $l_name\n "
-        . "$email\n $password");
+    include 'Account.html';
 } else {
-    echo "ERROR: Hush! Sorry $sql. "
-        . mysqli_error($conn);
+    include 'Step2.html';
 }
 
 mysqli_close($conn);

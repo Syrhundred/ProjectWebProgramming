@@ -12,4 +12,3 @@ function passwordPage(){
         window.location.href = "Password.html";
     })
 }
-

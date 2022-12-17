@@ -35,8 +35,8 @@
             <input type="password" id="con_psw" minlength="8">
         </div>
 
-        <div name="for_name" id="name"></div>
-        <div name="for_lname" id="lname"></div>
+        <input name="First" id="name">
+        <input name="Last" id="lname">
 
         <button type="submit">Create Account</button>
     </form>
@@ -53,8 +53,8 @@
     const nameValue = localStorage.getItem("first");
     const lnameValue = localStorage.getItem("last");
 
-    document.getElementById('name').textContent = nameValue;
-    document.getElementById('lname').textContent = lnameValue;
+    document.getElementById('name').value = nameValue;
+    document.getElementById('lname').value = lnameValue;
 </script>
 </body>
 </html>

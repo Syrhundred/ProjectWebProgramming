@@ -37,7 +37,7 @@
             Account
         </p>
 
-            <button type="button" onclick="giveNames(); window.location.href = 'Step2.html'">Next</button>
+            <button type="submit" onclick="giveNames(); window.location.href = 'Step2.html'">Next</button>
     </form>
 
     <br>
@@ -52,18 +52,16 @@
     function giveNames() {
         const form = document.getElementById("form");
         const fname = document.getElementById("first");
-        const lname = document.getElementById("lname");
+        const lname = document.getElementById("lastname");
 
-        form.addEventListener('click', function (e) {
-            e.preventDefault();
+        form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
 
             const fnameValue = fname.value;
             const lnameValue = lname.value;
 
             localStorage.setItem('first', fnameValue);
             localStorage.setItem('last', lnameValue);
-
-            window.location.href = "Step2.html";
         })
     }
 </script>
