@@ -33,16 +33,18 @@ const formButton = document.querySelector(".form-button");
 formButton.disabled = true;
 
 formInput.addEventListener("keyup", buttonState);
+
 function buttonState() {
     if (document.querySelector("#password").value === "") {
         formButton.disabled = true;
+        formButton.style.backgroundColor = '#9fb5f0';
     } else {
         formButton.disabled = false;
-        formButton.background = rgb(62,106,225);
+        formButton.style.backgroundColor = '#3e6ae1';
     }
 }
 
-
+/////////////////////////////////////////////////////////////////////////
 formButton.addEventListener("click", () => {
     console.log("You entered:", document.querySelector(".form-input").value);
 });
