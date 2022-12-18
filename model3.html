@@ -8,11 +8,22 @@
 </head>
 <body>
 <nav>
-    <img id="teslaLogo" src="teslaLogo.svg">
+    <a href="Untitled-1.html"><img id="teslaLogo" src="teslaLogo.svg"></a>
 </nav>
 <div class="twoMainSides">
     <div class="leftSide">
-        <img src="compositor.jpg" height="576px" width="1023.6px">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/3</div>
+                <img src="compositor.jpg" height="576px" width="1023.6px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2/3</div>
+                <img src="rightSide.jpg" height="576px" width="1023.6px">
+            </div>
+        </div>
+<!--        <img src="compositor.jpg" height="576px" width="1023.6px" style="position: fixed;">-->
     </div>
 
     <div class="rightSide">
@@ -48,9 +59,34 @@
         </div>
 
         <span id="rearWheel">Rear-Wheel Drive</span>
-        <button id="model3"><span style="padding-left: 10px">Model 3</span><span style="padding-right: 10px">$40,390*</span></button>
+        <div class="features">
+            <button id="model3"><span style="padding-left: 10px">Model 3</span><span style="padding-right: 10px">$40,390*</span></button>
+            <span class="learnMore"><a href="">Learn more</a> about Range and Performance</span>
+            <span id="dualMotor">Dual Motor All-Wheel Drive</span>
+            <button id="model3performance"><span style="padding-left: 10px">Model 3 Performance</span><span style="padding-right: 10px">$56,390*</span></button>
+            <span class="learnMore">Available in 2023</span>
+        </div>
 
+        <span class="learnMore1" style="font-size:12px">* Prices above include potential incentives and gas <br>savings of $6,600.<a href=""> Learn More</a></span>
+
+        <button class="featureDetails">Feature Details</button>
+        <span class="mods" style="font-size: 35px">Paint</span>
+        <div class="colors">
+            <button class="eachColor"><img width="40px" height="40px" src="Paint_White.png"></button>
+            <button class="eachColor" ><img width="40px" height="40px" src="Paint_Red.png"></button>
+        </div>
+
+        <span class="mods" style="font-size: 35px">Wheels</span>
+        <div class="wheels">
+            <button class="eachWheel"><img width="40px" height="40px" src="option-wheels-18-aero.png"></button>
+            <button class="eachWheel"><img width="40px" height="40px" src="option-wheels-19-sport.png"></button>
+        </div>
+
+        <span class="mods" style="font-size: 35px">Enhanced autopilot</span>
+        <span style="font-size: 15px; margin-top: 10px">$6,000</span>
+        <button class="autopilotButton"><span>Autopilot</span></button>
     </div>
+
 </div>
 
 </body>
