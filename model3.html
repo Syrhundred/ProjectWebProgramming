@@ -12,31 +12,29 @@
 </nav>
 <div class="twoMainSides">
     <div class="leftSide">
+
         <div class="slideshow-container">
+            <a class="prev fade" onclick="plusSlides(-1)"><img src="leftButton.svg" height="25px"></a>
             <div class="mySlides fade">
-                <div class="numbertext">1/3</div>
+                <div class="numbertext"></div>
                 <img src="compositor.jpg" height="576px" width="1023.6px">
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2/3</div>
+                <div class="numbertext"></div>
                 <img src="rightSide.jpg" height="576px" width="1023.6px">
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3/3</div>
+                <div class="numbertext"></div>
                 <img src="backSide.jpg" height="576px" width="1023.6px">
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <a class="next fade" onclick="plusSlides(1)"><img src="rightButton.svg" height="25px"></a>
         </div>
-        <br>
 
-<!--        <div style="text-align:center">-->
-<!--            <span class="dot"></span>-->
-<!--        </div>-->
-<!--        <img src="compositor.jpg" height="576px" width="1023.6px" style="position: fixed;">-->
     </div>
+    <!--        <img src="compositor.jpg" height="576px" width="1023.6px" style="position: fixed;">-->
+
 
     <div class="rightSide">
         <span>Model 3</span>
@@ -72,20 +70,23 @@
 
         <span id="rearWheel">Rear-Wheel Drive</span>
         <div class="features">
-            <button id="model3"><span style="padding-left: 10px">Model 3</span><span style="padding-right: 10px">$40,390*</span></button>
+            <button id="model3"><span style="padding-left: 10px">Model 3</span><span style="padding-right: 10px">$40,390*</span>
+            </button>
             <span class="learnMore"><a href="">Learn more</a> about Range and Performance</span>
             <span id="dualMotor">Dual Motor All-Wheel Drive</span>
-            <button id="model3performance"><span style="padding-left: 10px">Model 3 Performance</span><span style="padding-right: 10px">$56,390*</span></button>
+            <button id="model3performance"><span style="padding-left: 10px">Model 3 Performance</span><span
+                    style="padding-right: 10px">$56,390*</span></button>
             <span class="learnMore">Available in 2023</span>
         </div>
 
-        <span class="learnMore1" style="font-size:12px">* Prices above include potential incentives and gas <br>savings of $6,600.<a href=""> Learn More</a></span>
+        <span class="learnMore1" style="font-size:12px">* Prices above include potential incentives and gas <br>savings of $6,600.<a
+                href=""> Learn More</a></span>
 
         <button class="featureDetails">Feature Details</button>
         <span class="mods" style="font-size: 35px">Paint</span>
         <div class="colors">
             <button class="eachColor"><img width="40px" height="40px" src="Paint_White.png"></button>
-            <button class="eachColor" ><img width="40px" height="40px" src="Paint_Red.png"></button>
+            <button class="eachColor"><img width="40px" height="40px" src="Paint_Red.png"></button>
         </div>
 
         <span class="mods" style="font-size: 35px">Wheels</span>
@@ -101,7 +102,7 @@
 
 </div>
 
-<script src="jsPart.js"></script>
+<script src="js.js"></script>
 
 </body>
 </html>
