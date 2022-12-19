@@ -1,3 +1,8 @@
+body {
+    font-family: "Gotham SSm";
+    overflow: hidden;
+}
+
 .navbar{
     font-family: "GothamSSm Light", serif;
     display: flex;
@@ -108,13 +113,16 @@ section > button{
     font-size: 48px;
 }
 
-h4 {
+h3 {
     margin: 10px 0;
+    color: #5C5E62;
 }
 
 input{
     margin: 10px 0;
-    width: 40px;
+    width: 80px;
+    background: #f4f4f4;
+    border: #f4f4f4;
 }
 
 #box{
@@ -122,4 +130,9 @@ input{
     height: 72px;
     display: flex;
     flex-direction: column;
+    font-weight: bold;
+}
+
+.edit{
+    text-decoration: underline;
 }

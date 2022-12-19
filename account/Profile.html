@@ -38,23 +38,20 @@
                 Profile Settings
             </a>
 
-            <button id="navigators">
+            <a href="Log_out.php" id="navigators">
                 <img src="exit.png" id="icons">
                 Sign Out
-            </button>
+            </a>
         </section>
 
         <section class="right">
             <h1 id="name"> Profile Settings</h1>
             <div id="lines">
                 <div id="box">
-                    <h4>Full Name</h4>
-
-                    Adil Murziyev
-
-                    <input type="button" value="Edit"
-                           onclick="window.open('EditPopUp.html','popUpWindow','height=500,width=772,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no, status=yes');"
-                    >
+                    <h3>Full Name</h3>
+                    <?php echo $_SESSION['FirstName']?>
+                    <?php echo  $_SESSION['LastName'] ?>
+                    <input class="edit" type="button" value="Edit" onclick="window.open('PopUpEditor.html','popUpWindow','height=500,width=800,left=100,top=100,resizable=yes,scrollbars=no,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
                 </div>
             </div>
 
@@ -62,15 +59,20 @@
 
             <div id="lines">
                 <div id="box">
-                    <h4>Email</h4>
-                    210103211@stu.sdu.edu.kz
+                    <h3>Email</h3>
+                    <?php echo $_SESSION['Email']; ?>
+
+
                 </div>
                 <div id="box">
-                    <h4>Password</h4>
+                    <h3>Password</h3>
+                    <input type="password" value="<?php echo $_SESSION['Password']; ?>" disabled>
                 </div>
             </div>
 
-            <button style="margin-top: 50px">Delete Account</button>
+            <a href="DeleteAccount.php" style="margin-top: 50px">Delete Account
+                <input name='email' value="<?php echo $_SESSION['Email']; ?>" style="display: none">
+            </a>
         </section>
     </div>
 </div>

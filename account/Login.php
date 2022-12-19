@@ -39,8 +39,15 @@ if (empty($uname)) {
 
         if ($row['Email'] === $uname && $row['Password'] === $pass) {
 
-            echo "Logged in!";
+            $_SESSION['Email'] = $row['Email'];
 
+            $_SESSION['FirstName'] = $row['FirstName'];
+
+            $_SESSION['LastName'] = $row['LastName'];
+
+            $_SESSION['Password'] = $row['Password'];
+
+            include 'Profile.html';
 
         } else {
 
