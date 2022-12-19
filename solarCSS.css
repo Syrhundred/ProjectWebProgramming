@@ -8,7 +8,6 @@ body{
     font-family: "GothamSSm Light", serif;
     display: flex;
     align-items: center;
-    width: 100%;
     height: 56px;
     padding-left: 50px;
 }
@@ -111,37 +110,58 @@ body{
 }
 .data{
     margin-top: 350px;
+    max-height: 60vh;
 }
 .mainSec a{
     color: #f4f4f4;
 }
 section {
     font-family: sans-serif;
-    min-height: 100vh;
-    scroll-snap-type: x mandatory;
 }
 section:nth-child(1) {
     background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/cfcf3747-c7d7-488d-896d-7c9462e50ca5/bvlatuR/std/2880x1800/Solar-Roof-Hero-Desktop-Global?quality=auto-medium&format=auto");background-position: center;
     background-size: cover;
-    scroll-snap-align: start;
+    min-height: 100vh;
 }
 
 section:nth-child(2) {
-    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70");background-position: center;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/60a584f9-7ae3-4cd5-9fa8-6251715df25b/bvlatuR/std/2880x1800/Solar-Roof-Design-Desktop-Global?quality=auto-medium&format=auto");
+    height: 65vh;
+    background-position: center;
     background-size: cover;
-    scroll-snap-align: start;
 }
 section:nth-child(3) {
-    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/538ac149-d103-4834-9d38-641d8ae447ef/bvlatuR/std/4096x2560/Homepage-Model-S-Desktop-LHD");background-position: center;
     background-size: cover;
+    height: 35vh;
 }
 section:nth-child(4) {
     background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ddc135ed-1638-40fb-8ab1-f8045059ecef/bvlatuR/std/4096x2560/Homepage-Model-X-Desktop-LHD");background-position: center;
     background-size: cover;
+    height: 100vh;
+    width: 25vw;
 }
 section:nth-child(5) {
-    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/4a41ec0e-7316-46a8-8ce9-e2f195ba644d/bvlatuR/std/2880x1800/Homepage-SolarRoof-Desktop-Global?quality=auto-medium&format=auto");background-position: center;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/039f3e04-61da-4144-a6fd-2af9787eebf1/bvlatuR/std/2880x1800/Solar-Roof-Energy-Desktop-Global?quality=auto-medium&format=auto");background-position: center;
     background-size: cover;
+    height: 100vh;
+    width: 75vw;
+}
+.parameters{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 350px;
+    color: #f4f4f4;
+}
+.p1{
+    width: 70px;
+    text-align: center;
+    margin-right: 100px;
+}
+.solar{
+    text-align: center;
+    padding-top: 50px;
 }
 .nextSection{
     display: flex;
@@ -160,4 +180,21 @@ section:nth-child(5) {
 a {
     text-decoration: none;
     color: White;
+}
+.house{
+    display: flex;
+}
+.design{
+    width: 400px;
+    padding-left: 200px;
+}
+.design2{
+    padding-left: 100px;
+    width: 600px;
+    font-size: 1.1em;
+    padding-top: 50px;
+}
+.but:before{
+    display: inline-block;
+    vertical-align: top;
 }
