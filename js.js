@@ -1,5 +1,14 @@
 let slideIndex = 1;
 showSlides(slideIndex);
+var header = document.getElementById("features");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
