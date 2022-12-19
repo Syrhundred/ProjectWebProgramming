@@ -135,16 +135,19 @@ section:nth-child(3) {
     height: 35vh;
 }
 section:nth-child(4) {
-    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ddc135ed-1638-40fb-8ab1-f8045059ecef/bvlatuR/std/4096x2560/Homepage-Model-X-Desktop-LHD");background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 25vw;
+    display: flex;
 }
 section:nth-child(5) {
-    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/039f3e04-61da-4144-a6fd-2af9787eebf1/bvlatuR/std/2880x1800/Solar-Roof-Energy-Desktop-Global?quality=auto-medium&format=auto");background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 75vw;
+    display: flex;
+}
+section:nth-child(6) {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
 }
 .parameters{
     display: flex;
@@ -185,7 +188,7 @@ a {
     display: flex;
 }
 .design{
-    width: 400px;
+    width: 30%;
     padding-left: 200px;
 }
 .design2{
@@ -194,7 +197,27 @@ a {
     font-size: 1.1em;
     padding-top: 50px;
 }
-.but:before{
-    display: inline-block;
-    vertical-align: top;
+.energyStore{
+    width: 30%;
+    padding-top: 30px;
 }
+.energy1{
+    padding-left: 50px;
+    font-size: 1.4em;
+}
+.energy2{
+    padding-left: 50px;
+    padding-top: 270px;
+}
+.energyIMG{
+    width: 70%;
+}
+.durability{
+    margin: 0 auto;
+    width: 90%;
+}
+.durability-video{
+    width: 100vw;
+    object-fit:cover;
+}
+
