@@ -112,14 +112,17 @@ body{
 }
 .data{
     margin-top: 350px;
- }
+}
+.mainSec a{
+    color: #f4f4f4;
+}
 section {
     font-family: sans-serif;
     min-height: 100vh;
     scroll-snap-type: x mandatory;
 }
 section:nth-child(1) {
-    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD");background-position: center;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/cfcf3747-c7d7-488d-896d-7c9462e50ca5/bvlatuR/std/2880x1800/Solar-Roof-Hero-Desktop-Global?quality=auto-medium&format=auto");background-position: center;
     background-size: cover;
     scroll-snap-align: start;
 }
@@ -156,6 +159,6 @@ section:nth-child(5) {
     color: Black;
 }
 a {
-     text-decoration: none;
-     color: Black;
- }
+    text-decoration: none;
+    color: White;
+}
