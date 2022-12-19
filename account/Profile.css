@@ -1,0 +1,138 @@
+body {
+    font-family: "Gotham SSm";
+    overflow: hidden;
+}
+
+.navbar{
+    font-family: "GothamSSm Light", serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding-left: 50px;
+    /*position: fixed;*/
+}
+
+.navTextFam {
+    font-family: "GothamSSm Light", serif;
+    font-weight: bold;
+}
+
+.cars ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    border-radius: 100px;
+    height: 70px;
+}
+.cars ul li a{
+    padding: 0 20px;
+    font-size: 1.1em;
+    height: 80px;
+}
+.cars a:hover{
+    background-color: 	#c4ccd4;
+}
+
+.cars{
+    font-family: "GothamSSm Light", serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 70px;
+    padding-left: 90px;
+}
+
+.menu{
+    font-family: "GothamSSm Light", serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+    height: 56px;
+    float: right;
+    padding-left: 70px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+section > a{
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: #171A20;
+}
+
+section > button{
+    width: 200px;
+    height: 40px;
+}
+
+.left{
+    width: 300px;
+    /*height: ;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 46px;
+}
+
+.right{
+    width: 65vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: ;*/
+}
+
+#icons{
+    width: 17px;
+    height: 16px;
+    padding: 0 12px;
+}
+
+#navigators{
+    font-size: 17px;
+    color: #5C5E62;
+}
+
+#lines{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+}
+
+#name{
+    margin: 60px 0 20px 0;
+    font-size: 48px;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #5C5E62;
+}
+
+input{
+    margin: 10px 0;
+    width: 80px;
+    background: #f4f4f4;
+    border: #f4f4f4;
+}
+
+#box{
+    width: 274px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.edit{
+    text-decoration: underline;
+}

@@ -18,7 +18,7 @@
 
     <h1>Sign In</h1>
 
-    <form id="form">
+    <form id="form" class="form-input">
 
         <div class="email_in">
             <label for="email" class="log" id="log">
@@ -28,10 +28,10 @@
                 <span class="tooltiptext">If your account is linked to an email you no longer have access to, sign in to your account and update your email under account settings</span>
                 </div>
             </label><br><br>
-            <input type="text" id="email">
+            <input type="email" id="email" required>
         </div>
 
-        <button type="submit" onclick="passwordPage()">Next</button>
+        <button type="submit" onclick="passwordPage()" class="form-button">Next</button>
 
     </form>
 
@@ -44,7 +44,7 @@
 
         <div class="hr-lines">Or</div>
 
-       <button>Create Account</button>
+       <button onclick="window.location.href = 'CreateAccStep1.html'">Create Account</button>
     </div>
 
     <div class="bottom">

@@ -178,3 +178,22 @@ button{
     opacity: 1;
 }
 
+.passwordArea{
+    width: 332px;
+    position: relative;
+}
+
+.passwordArea input[type="password"],
+.passwordArea input[type="text"]{
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 32%;
+    right: 4%;
+    cursor: pointer;
+    /*color: lightgray;*/
+}

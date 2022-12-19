@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PopUp Window</title>
+</head>
+<style>
+    body{
+        overflow: hidden;
+        margin: 46px;
+    }
+
+    input{
+        background-color: #f4f4f4;
+        width: 300px;
+        height: 40px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    label{
+        font-weight: bold;
+        color: #5C5E62;
+    }
+
+    button{
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(159,181,240);
+        color: #f4f4f4;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid rgb(159, 181, 240);
+        font-family: "GothamSSm Light", serif;
+    }
+</style>
+<body>
+<main>
+    <h1>
+        Edit Full Name
+    </h1>
+    <div>
+        <form action="editWithPopup.php" method="post">
+            <label for="editFirst"> First Name </label><br><br>
+            <input type="text" name="FirstName" id="editFirst"><br><br>
+
+            <label for="editLast"> Last Name </label><br><br>
+            <input type="text" name="LastName" id="editLast"><br><br>
+
+            <label for="email">Email</label><br><br>
+            <input type="email" name="address" id="email">
+            <br><br>
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>
