@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile Account</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="Profile.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
     <div class="container">
         <section class="left">
 
-            <a href="Dashboard.html" id="navigators">
+            <a href="" id="navigators">
                 <img src="home.png" id="icons">
                 Dashboard
             </a>
@@ -38,36 +38,39 @@
                 Profile Settings
             </a>
 
-            <a href="Log_out.php" id="navigators">
+            <a hre
+               f="Log_out.php" id="navigators">
                 <img src="exit.png" id="icons">
                 Sign Out
             </a>
         </section>
 
         <section class="right">
-            <h1 id="name"> Profile Settings</h1>
+            <h1 id="name"> Dashboard </h1>
             <div id="lines">
-                <div id="box">
-                    <h3>Full Name</h3>
-                    <?php echo $_SESSION['FirstName']?>
-                    <?php echo  $_SESSION['LastName'] ?>
-                    <input class="edit" type="button" value="Edit" onclick="window.open('PopUpEditor.html','popUpWindow','height=500,width=800,left=100,top=100,resizable=yes,scrollbars=no,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
+                <div id="dashboard_boxes">
+                    <div class="image-box" style="background-image: url(home.jpg);">
+                    </div>
+                    <div class="text">
+                        <span style="font-weight: bolder">Order Solar Roof</span> <br>
+                        Produce energy to power your Tesla life
+                    </div>
                 </div>
+
+                <div id="dashboard_boxes">
+                    <div class="image-box" style="background-image: url(cars.png);">
+
+                    </div>
+                    <div class="text">
+                        <span style="font-weight: bolder">Reserve car</span> <br>
+                        Browse our models
+                    </div>
+                </div>
+
             </div>
 
-            <h1>Security</h1>
-
             <div id="lines">
-                <div id="box">
-                    <h3>Email</h3>
-                    <?php echo $_SESSION['Email']; ?>
 
-
-                </div>
-                <div id="box">
-                    <h3>Password</h3>
-                    <input type="password" value="<?php echo $_SESSION['Password']; ?>" disabled>
-                </div>
             </div>
 
         </section>
