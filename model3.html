@@ -73,13 +73,15 @@
 
             <span id="rearWheel">Rear-Wheel Drive</span>
             <div id="features">
-                <button class="btn active"><span style="padding-left: 10px">Model 3</span><span style="padding-right: 10px">$40,390*</span>
+                <button class="btn active" onclick="infoTaker()"><span style="padding-left: 10px">Model 3</span><span
+                        style="padding-right: 10px">$40,390*</span>
                 </button>
 
                 <span class="learnMore"><a href="">Learn more</a> about Range and Performance</span>
 
                 <span id="dualMotor">Dual Motor All-Wheel Drive</span>
-                <button class="btn"><span style="padding-left: 10px">Model 3 Performance</span><span
+                <button class="btn" onclick="infoTaker2()"><span
+                        style="padding-left: 10px">Model 3 Performance</span><span
                         style="padding-right: 10px">$56,390*</span></button>
 
                 <span class="learnMore">Available in 2023</span>
@@ -90,24 +92,28 @@
 
             <span class="mods" style="font-size: 35px">Paint</span>
             <div class="colors">
-                <button class="eachColor"><img width="40px" height="40px" src="Paint_White.png"></button>
-                <button class="eachColor"><img width="40px" height="40px" src="Paint_Red.png"></button>
+                <button onclick="colorTaker()" class="eachColor"><img width="40px" height="40px" src="Paint_White.png">
+                </button>
+                <button onclick="colorTaker2()" class="eachColor"><img width="40px" height="40px" src="Paint_Red.png">
+                </button>
             </div>
 
             <span class="mods" style="font-size: 35px">Wheels</span>
             <div class="wheels">
-                <button class="eachWheel"><img width="40px" height="40px" src="option-wheels-18-aero.png"></button>
-                <button class="eachWheel"><img width="40px" height="40px" src="option-wheels-19-sport.png"></button>
+                <button onclick="kolesoTaker()" class="eachWheel"><img width="40px" height="40px"
+                                                                       src="option-wheels-18-aero.png"></button>
+                <button onclick="kolesoTaker2()" class="eachWheel"><img width="40px" height="40px"
+                                                                        src="option-wheels-19-sport.png"></button>
             </div>
 
             <span class="mods" style="font-size: 35px">Enhanced autopilot</span>
             <span style="font-size: 15px; margin-top: 10px">$6,000</span>
-            <button class="autopilotButton"><span>Autopilot</span></button>
+            <button class="autopilotButton" onclick="autopilotTaker()"><span>Autopilot</span></button>
             <div class="mods" style="display: flex; flex-direction: column; align-items: center">
                 <span style="font-size: 35px;">Total payment</span>
                 <br>
                 <span style="font-size: 25px; margin-bottom: 30px">$0000</span>
-                <button class="addtoCart">Add to Cart</button>
+                <button class="addtoCart" onclick="addtoCart_button()">Add to Cart</button>
             </div>
         </div>
     </div>

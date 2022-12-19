@@ -10,6 +10,83 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 
+var aboutCar = {
+    model: "Model 3",
+    paint: "Model 3 Performance",
+    koleso: "First Wheel",
+    autopilot: false
+};
+
+var bill = 0;
+
+function infoTaker() {
+    aboutCar = {
+        model : "Model 3"
+    }
+}
+
+function infoTaker2() {
+    aboutCar = {
+        model : "Model 3 Performance"
+    }
+}
+
+function colorTaker() {
+    aboutCar = {
+        paint: "White"
+    }
+}
+function colorTaker2() {
+    aboutCar = {
+        paint: "Red"
+    }
+}
+
+function kolesoTaker() {
+    aboutCar = {
+        koleso : "First Wheel"
+    }
+}
+
+function kolesoTaker2() {
+    aboutCar = {
+        koleso : "Second Wheel"
+    }
+}
+
+function autopilotTaker(){
+    aboutCar = {
+        autopilot: true
+    }
+}
+var add = false;
+function addtoCart_button() {
+    add = true;
+}
+
+    if (add === true) {
+
+    }
+
+    if (aboutCar.model === "Model 3" && aboutCar.autopilot === true) {
+        bill = 46390;
+    }
+
+    if (aboutCar.model === "Model 3" && aboutCar.autopilot === false) {
+        bill = 40390;
+    }
+
+    if (aboutCar.model === "Model 3 Performance" && aboutCar.autopilot === false) {
+        bill = 56390;
+    }
+
+    if (aboutCar.model === "Model 3 Performance" && aboutCar.autopilot === true) {
+        bill = 62390;
+    }
+
+
+
+
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
