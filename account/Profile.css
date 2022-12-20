@@ -151,7 +151,8 @@ input{
 }
 
 div.image-box{
-    width: 100%;
+    width: 98%;
+    margin: auto;
     height: 120px;
     border-radius: 5%;
     background-size: cover;
@@ -159,7 +160,14 @@ div.image-box{
 }
 
 .text{
-    margin-top: 15px;
+    margin-top: 12px;
     color: #393C41;
     margin-left: 10px;
+}
+
+#dashboard_boxes > a{
+    margin-left: 10px;
+    margin-top: 5px;
+    /*text-decoration: none;*/
+    color: #5C5E62;
 }
