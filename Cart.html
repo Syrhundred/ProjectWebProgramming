@@ -27,10 +27,10 @@
             </div>
             <div class="text">
                 <ul>
-                    <li>First element</li>
-                    <li>second element</li>
-                    <li>third element</li>
-                    <li>fourth element</li>
+                    <li id="char1"></li>
+                    <li id="char2"></li>
+                    <li id="char3"></li>
+                    <li id="char4"></li>
                 </ul>
             </div>
         </div>
@@ -74,5 +74,15 @@
         </div>
     </div>
 </div>
+
+<script src="js.js">
+            if (aboutCar.model === "Model 3") {
+                document.getElementById('block1').style.backgroundImage = "compositor.jpg";
+                document.getElementById('char1').textContent = aboutCar.model;
+                document.getElementById('char2').textContent = aboutCar.paint;
+                document.getElementById('char3').textContent = aboutCar.koleso;
+                document.getElementById('char4').textContent = aboutCar.autopilot;
+        }
+</script>
 </body>
 </html>
